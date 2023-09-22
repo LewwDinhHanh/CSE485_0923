@@ -1,0 +1,42 @@
+.logo img{
+    width: 100%;
+    padding: 50px;
+    background: linear-gradient(to right, #67D7F5, #86F7CC);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    max-width: 1000px;
+}
+
+.my_Form{
+    padding: 30px;
+}
+
+.btn{
+    background-color: black;
+    border-radius: 10px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.mb-3 input{
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.alight a,span{
+    padding-top: 10px;
+}
+
+.alight a{
+    text-decoration: none;
+}
+
+.alight a:hover{
+    text-decoration: underline;
+}
+
