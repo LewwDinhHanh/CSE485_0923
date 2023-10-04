@@ -18,12 +18,6 @@
                 return $BaiHats = [];
             }
         }
-        public static function delete($id)
-        {
-            $conn = new PDO('mysql:host=localhost;dbname=quanlybaihat','root','');
-            $sql = "delete from baihat where id = ?";
-            $stmt=$conn->prepare($sql);
-            $stmt->execute([$id]);
-        }
+
     }
 ?>

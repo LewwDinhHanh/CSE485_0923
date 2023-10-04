@@ -40,6 +40,10 @@
                 <span class="text-success fs-1">Sửa Bài Hát</span>
                 <form class="mt-2" action="edit_sing_process.php" method="post">   
                     <div class="mb-3">
+                        <label class="form-label">ID Bài Hát</label>
+                        <input type="text" class="form-control" name="id1" value="<?= $user['id']; ?>" readonly>
+                    </div>
+                    <div class="mb-3">
                         <label class="form-label">Tên Bài Hát</label>
                         <input type="text" class="form-control" name="sing" value="<?= $user['tenBaiHat']; ?>">
                     </div>
@@ -49,9 +53,9 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">ID Thể Loại</label>
-                        <input type="text" class="form-control" name="idtl" value="<?= $user['idTheLoai']; ?>">
+                        <input type="text" class="form-control" name="idtl" value="<?= $user['idTheLoai']; ?>" readonly>
                     </div>
-                    <button type="submit" class="btn btn-primary m-2" name="">Sửa</button>
+                    <button type="submit" class="btn btn-primary m-2" name="sbmSave">Sửa</button>
                 </form>
             </div>
         </div>

@@ -38,10 +38,10 @@
                         <td><?php echo $theloai->getTenTheLoai();?></td>
                         
                         <td>
-                            <a href="<?=DOMAIN.'app/views/genres/edit.php' ;?>"><i class="bi bi-pencil-square"></i></a>
+                            <a href="../app/views/genres/edit.php?id=<?= $theloai->getId(); ?>"><i class="bi bi-pencil-square"></i></a>
                         </td>
                         <td>
-                                <a href="" <?= $theloai->getId(); ?> onclick="return confirm('Bạn có chắc chắn muốn xoá?');">
+                                <a href="../app/views/genres/delete_process.php?id=<?= $theloai->getId(); ?>" <?= $theloai->getId(); ?> onclick="return confirm('Bạn có chắc chắn muốn xoá?');">
                                     <i class="bi bi-trash3"></i>
                                 </a>
                         </td>
