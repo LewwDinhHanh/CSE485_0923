@@ -18,7 +18,7 @@
 <body>
 <div class = "container">
         <h3 class="text-center text-uppercase text-success my-3">Thể Loại</h3>
-        <a href="" class = 'btn btn-success'>Thêm mới</a>
+        <a href="<?=DOMAIN.'app/views/genres/add.php' ;?>" class = 'btn btn-success'>Thêm mới</a>
         <a href="index.php" class="btn btn-success">Bài hát</a>
         <table class="table">
             <thead>
@@ -38,7 +38,7 @@
                         <td><?php echo $theloai->getTenTheLoai();?></td>
                         
                         <td>
-                            <a href=""><i class="bi bi-pencil-square"></i></a>
+                            <a href="<?=DOMAIN.'app/views/genres/edit.php' ;?>"><i class="bi bi-pencil-square"></i></a>
                         </td>
                         <td>
                                 <a href="" <?= $theloai->getId(); ?> onclick="return confirm('Bạn có chắc chắn muốn xoá?');">
