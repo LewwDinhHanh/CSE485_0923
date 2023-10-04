@@ -40,10 +40,10 @@
                         <td><?php echo $baihat->getcasi();?></td>
                         <td><?php echo $baihat->getidtheloai();?></td>
                         <td>
-                            <a href="<?= DOMAIN.'app/views/Sings/edit.php?id='.$baihat->getId(); ?>"><i class="bi bi-pencil-square"></i></a>
+                            <a href="../app/views/Sings/edit.php?id=<?= $baihat->getId(); ?>"><i class="bi bi-pencil-square"></i></a>
                         </td>
                         <td>
-                                <a href="" onclick="return confirm('Bạn có chắc chắn muốn xoá?');">
+                                <a href="../app/views/Sings/delete_process.php?id=<?= $baihat->getId(); ?>" onclick="return confirm('Bạn có chắc chắn muốn xoá?');">
                                     <i class="bi bi-trash3"></i>
                                 </a>
                         </td>

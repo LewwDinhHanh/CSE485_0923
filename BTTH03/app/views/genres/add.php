@@ -14,7 +14,7 @@
                     <span class="text-success fs-1">Thêm Thể Loại</span>
                     <div class="mb-3">
                         <label class="form-label">Tên Thể Loại</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="">
                     </div>
                     <button type="submit" class="btn btn-primary mb-2">Thêm</button>
                 </form>

@@ -10,21 +10,21 @@
     <div class="container border border-success mt-3">
         <div class="row">
             <div class="col-md">
-                <form class="mt-5">
+                <form class="mt-5" action="add_sing_process.php" method="post">
                     <span class="text-success fs-1">Thêm Bài Hát</span>
                     <div class="mb-3">
                         <label class="form-label">Tên Bài Hát</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="sing">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Ca Sĩ</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="casi">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">ID Thể Loại</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="idtl">
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2">Thêm</button>
+                    <button type="submit" class="btn btn-primary mb-2" name="sbmSave">Thêm</button>
                 </form>
             </div>
         </div>
