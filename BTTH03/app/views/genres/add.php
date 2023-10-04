@@ -10,13 +10,13 @@
     <div class="container border border-success mt-3">
         <div class="row">
             <div class="col-md">
-                <form class="mt-5">
+                <form class="mt-5" action="add_genre_process.php" method="post">
                     <span class="text-success fs-1">Thêm Thể Loại</span>
                     <div class="mb-3">
                         <label class="form-label">Tên Thể Loại</label>
-                        <input type="text" class="form-control" name="">
+                        <input type="text" class="form-control" name="tenTheLoai">
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2">Thêm</button>
+                    <button type="submit" class="btn btn-primary mb-2" name="sbmSave">Thêm</button>
                 </form>
             </div>
         </div>
