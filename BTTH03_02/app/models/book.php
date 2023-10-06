@@ -1,14 +1,14 @@
 <?php
 
-class book{
-    private $id,$tenSach, $namXuatBan, $idTacGia;
+class Book{
+    private $id,$bookname, $year, $idAuthor;
 
-    public function __construct($id, $tenSach, $namXuatBan, $idTacGia)
+    public function __construct($id,$bookname, $year, $idAuthor)
     {
         $this->id = $id;
-        $this->tenSach= $tenSach;
-        $this->namXuatBan = $namXuatBan;
-        $this->idTacGia = $idTacGia;
+        $this->bookName = $bookname;
+        $this->year = $year;
+        $this->idAuthor = $idAuthor;
     }
 
     public function getId()
@@ -21,34 +21,34 @@ class book{
         $this->id = $id;
     }
 
-    public function getTenSach()
+    public function getBookName()
     {
-        return $this->tenSach;
+        return $this->bookName;
     }
 
-    public function setTenSach($tenSach)
+    public function setBookName($bookname)
     {
-        $this->tenSach = $tenSach;
+        $this->bookName = $bookname;
     }
 
-    public function getNamXuatBan()
+    public function getYear()
     {
-        return $this->namXuatBan;
+        return $this->year;
     }
 
-    public function setNamXuatBan($namXuatBan)
+    public function setYear($year)
     {
-        $this->namXuatBan = $namXuatBan;
+        $this->year = $year;
     }
 
-    public function getIdTacGia()
+    public function getIdAuthor()
     {
-        return $this->idTacGia;
+        return $this->idAuthor;
     }
 
-    public function setIdTacGia($idTacGia)
+    public function setIdAuthor($idAuthor)
     {
-        $this->idTacGia = $idTacGia;
+        $this->idAuthor = $idAuthor;
     }
 
 }

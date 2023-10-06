@@ -1,12 +1,12 @@
 <?php
 
-class author{
-    private $id,$tenTacGia;
+class Author{
+    private $id,$nameAuthor;
 
-    public function __construct($id, $tenTacGia)
+    public function __construct($id, $nameAuthor)
     {
         $this->id = $id;
-        $this->tenTacGia = $tenTacGia;
+        $this->nameAuthor = $nameAuthor;
     }
 
     public function getId()
@@ -19,13 +19,13 @@ class author{
         $this->id = $id;
     }
 
-    public function getTenTacGia()
+    public function getNameAuthor()
     {
-        return $this->tenTacGia;
+        return $this->nameAuthor;
     }
 
-    public function setTenTacGia($tenTacGia)
+    public function setNameAuthor($nameAuthor)
     {
-        $this->tenTacGia = $tenTacGia;
+        $this->nameAuthor = $nameAuthor;
     }
 }

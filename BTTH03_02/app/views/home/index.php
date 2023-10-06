@@ -36,9 +36,9 @@
                 ?>
                         <tr>
                         <th scope="row"><?php echo $book->getId();?></th>
-                        <td><?php echo $book->getTenSach();?></td>
-                        <td><?php echo $book->getNamXuatBan();?></td>
-                        <td><?php echo $book->getIdTacGia();?></td>
+                        <td><?php echo $book->getBookName();?></td>
+                        <td><?php echo $book->getYear();?></td>
+                        <td><?php echo $book->getIdAuthor();?></td>
                         <td>
                             <a href="../app/views/books/edit.php?id=<?= $book->getId(); ?>"><i class="bi bi-pencil-square"></i></a>
                         </td>

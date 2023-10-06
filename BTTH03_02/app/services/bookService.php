@@ -1,5 +1,5 @@
 <?php 
-    require_once APP_ROOT.'/app/models/book.php';
+    require_once APP_ROOT.'/app/models/Book.php';
     class BookService{
         public function getAllBook(){
             //buoc1: ketnoi db

@@ -1,5 +1,5 @@
 <?php 
-    require_once APP_ROOT.'/app/models/author.php';
+    require_once APP_ROOT.'/app/models/Author.php';
     class AuThorService{
         public function getAllAuthor(){
             //buoc1: ketnoi db

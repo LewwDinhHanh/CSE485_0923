@@ -35,7 +35,7 @@
                 ?>
                         <tr>
                         <th scope="row"><?php echo $author->getId();?></th>
-                        <td><?php echo $author->getTenTacGia();?></td>
+                        <td><?php echo $author->getNameAuthor();?></td>
                         
                         <td>
                             <a href="../app/views/author/edit.php?id=<?= $author->getId(); ?>"><i class="bi bi-pencil-square"></i></a>

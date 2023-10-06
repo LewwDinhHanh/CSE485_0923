@@ -2,14 +2,14 @@
 
 class HomeController{
     public function author(){
-        require_once APP_ROOT.'/app/services/authorService.php';
+        require_once APP_ROOT.'/app/services/AuthorService.php';
         $authorService = new AuThorService();
         $authors  = $authorService ->getAllAuthor();
 
         include APP_ROOT.'/app/views/home/author.php';
     }
     public function index(){
-        require_once APP_ROOT.'/app/services/bookService.php';
+        require_once APP_ROOT.'/app/services/BookService.php';
         $bookService = new BookService();
         $books  = $bookService ->getAllBook();
 
