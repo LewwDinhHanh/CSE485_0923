@@ -17,39 +17,23 @@
         <div class="col-md-9 main">
 
             <div class="main-content vh-100 p-3">
-                <h3 class=" text-center text-uppercase">Sửa thông tin sách</h3>
-                <a class="btn btn-primary mb-3" href="<?php echo DOMAIN."/public"?>">Trở về trang chủ</a>
-                <form action="<?php echo DOMAIN ."/public/index.php?action=update"?>" method="post">
+                <h3 class=" text-center text-uppercase">Sửa thông tác giả</h3>
+                <a class="btn btn-primary mb-3" href="<?php echo DOMAIN."/public/author.php"?>">Trở về trang chủ</a>
+                <form action="<?php echo DOMAIN ."/public/author.php?action=update"?>" method="post">
                     <div class="row input-group mb-3">
                         <div class="col-md-4 ">
                             ID
                         </div>
                         <div class="col-md-8">
-                            <input type="text" name="id" id="id" class="form-control bg-warning" value="<?php echo $book->getId() ?>" readonly>
+                            <input type="text" name="id" id="id" class="form-control bg-warning" value="<?php echo $author->getId() ?>" readonly>
                         </div>
                     </div>
                     <div class="row input-group mb-3">
                         <div class="col-md-4 ">
-                            Tên sách
+                            Tên tác giả
                         </div>
                         <div class="col-md-8">
-                            <input type="text" name="bookname" class="form-control" value="<?php echo $book->getNameBook() ?>" required>
-                        </div>
-                    </div>
-                    <div class="row input-group mb-3">
-                        <div class="col-md-4 ">
-                            Năm xuất bản
-                        </div>
-                        <div class="col-md-8">
-                            <input type="text" name="year" class="form-control" value="<?php echo $book->getYear() ?>" required>
-                        </div>
-                    </div>
-                    <div class="row input-group mb-3">
-                        <div class="col-md-4 ">
-                            ID tác giả
-                        </div>
-                        <div class="col-md-8">
-                            <input type="text" name="idauthor"  class="form-control" value="<?php echo $book->getIdAuthor() ?>" required>
+                            <input type="text" name="name" id="name" class="form-control" value="<?php echo $author->getNameAuthor() ?>" required>
                         </div>
                     </div>
                     <div class="row">

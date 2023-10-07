@@ -22,31 +22,15 @@
                         echo "<p style='background-color:orange'>{$_GET['error']}</p>";
                     }
                 ?>
-                <h3 class=" text-center text-uppercase">Thêm sách mới</h3>
-                <a class="btn btn-primary mb-3" href="<?php echo DOMAIN."/public"?>">Trở về trang chủ</a>
-                <form action="<?php echo DOMAIN."/public/index.php?action=store"?>" method="post">
+                <h3 class=" text-center text-uppercase">Thêm tác giả</h3>
+                <a class="btn btn-primary mb-3" href="<?php echo DOMAIN."/public/author.php"?>">Trở về trang chủ</a>
+                <form action="<?php echo DOMAIN."/public/author.php?action=store"?>" method="post">
                     <div class="row input-group mb-3">
                         <div class="col-md-4 ">
-                            Tên sách
+                            Tên tác giả
                         </div>
                         <div class="col-md-8">
-                            <input type="text" name="bookname" id="" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row input-group mb-3">
-                        <div class="col-md-4 ">
-                            Năm xuất bản
-                        </div>
-                        <div class="col-md-8">
-                            <input type="text" name="year" id="" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row input-group mb-3">
-                        <div class="col-md-4 ">
-                            ID tác giả
-                        </div>
-                        <div class="col-md-8">
-                            <input type="text" name="idauthor" id="" class="form-control">
+                            <input type="text" name="name" id="" class="form-control">
                         </div>
                     </div>
                     <div class="row">

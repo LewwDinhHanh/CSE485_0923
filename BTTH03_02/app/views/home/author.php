@@ -8,18 +8,14 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <style>
-        .container{
-            border: 1px solid black;
-        }
-    </style>
-    <title>Book</title>
+    
+    <title>Homepage</title>
 </head>
 <body>
 <div class = "container">
         <h3 class="text-center text-uppercase text-success my-3">Tác Giả</h3>
-        <a href="<?=DOMAIN.'app/views/author/add.php'; ?>" class = 'btn btn-success'>Thêm mới</a>
-        <a href="index.php" class="btn btn-success">Sách</a>
+        <a href="<?= DOMAIN . "/public/author.php?action=create" ?>" class = 'btn btn-success'>Thêm mới</a>
+        <a href="<?= DOMAIN.'/public'; ?>" class="btn btn-success">Sách</a>
         <table class="table">
             <thead>
                 <tr>
@@ -31,19 +27,19 @@
             </thead>
             <tbody>
                 <?php 
-                    foreach($authors as $author){
+                    foreach($Authors as $data){
                 ?>
                         <tr>
-                        <th scope="row"><?php echo $author->getId();?></th>
-                        <td><?php echo $author->getNameAuthor();?></td>
+                        <th scope="row"><?php echo $data->getId();?></th>
+                        <td><?php echo $data->getNameAuthor();?></td>
                         
                         <td>
-                            <a href="../app/views/author/edit.php?id=<?= $author->getId(); ?>"><i class="bi bi-pencil-square"></i></a>
+                            <a href="<?= DOMAIN . '/public/author.php?action=edit&id='.$data->getId(); ?> "><i class="bi bi-pencil-square"></i></a>
                         </td>
                         <td>
-                                <a href="../app/views/author/delete_process.php?id=<?= $author->getId(); ?>" onclick="return confirm('Bạn có chắc chắn muốn xoá?');">
+                            <a href="<?= DOMAIN . '/public/author.php?action=delete&id='.$data->getId(); ?>" <?= $data->getId(); ?> onclick=" return confirm('Bạn có chắc chắn muốn xoá?');">
                                     <i class="bi bi-trash3"></i>
-                                </a>
+                            </a>
                         </td>
                 </tr>
                 <?php

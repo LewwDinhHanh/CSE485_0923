@@ -1,13 +1,13 @@
 <?php
 require_once('../app/config/config.php');
+$controll = isset($_GET['controller'])?$_GET['controller']:'author';
+$action = isset($_GET['action'])?$_GET['action']:'index';
+$controller = ucfirst($controll);
+$controllers = $controller . "Controller";
+$controllerPath = '/app/controllers/' . $controllers . '.php';
 
-$controller = isset($_GET['controller'])?$_GET['controller']:'home';
-$action = isset($_GET['action'])?$_GET['action']:'author';
-
-if($controller == 'home'){
-    require_once APP_ROOT.'/app/controllers/HomeController.php';
-    $homeController = new HomeController();
-    $homeController->author();
-}
+require_once(APP_ROOT . $controllerPath);
+$objController = new $controllers();
+$objController->$action();
 
 ?>
